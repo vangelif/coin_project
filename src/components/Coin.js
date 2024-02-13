@@ -1,7 +1,31 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchCoinData, showCoins } from '../redux/coinsSlice';
+import btcIcon from '../assets/btc.png';
+import ethIcon from '../assets/eth.png';
+import xrpIcon from '../assets/xrp.png';
+import ltcIcon from '../assets/ltc.png';
+import bchIcon from '../assets/bch.png';
 
+const getIcon = (symbol) => {
+    switch (symbol) {
+        case 'BTC':
+        return btcIcon;
+        case 'ETH':
+        return ethIcon;
+        case 'XRP':
+        return xrpIcon;
+        case 'LTC':
+        return ltcIcon;
+        case 'BCH':
+        return bchIcon;
+        default:
+        return '';
+    }
+};
+
+// B1FFC2 green
+// FFA3A6 red
 const Coin = () => {
   const dispatch = useDispatch();
   const coins = useSelector(showCoins);
@@ -18,26 +42,28 @@ const Coin = () => {
   return (
     <div>
       <h2>Coin Data</h2>
+      <button>CLICK HERE</button>
       <table>
         <thead>
-          <tr>
+            <tr>
             <th>Name</th>
             <th>Symbol</th>
             <th>Price (USD)</th>
             <th>Price Change (24h)</th>
-          </tr>
-        </thead>
-        <tbody>
-          {coins.map((coin, index) => (
-            <tr key={index}>
-              <td>{coin.name}</td>
-              <td>{coin.symbol}</td>
-              <td>${coin.price_usd}</td>
-              <td>{coin.percent_change_24h}%</td>
             </tr>
-          ))}
-        </tbody>
-      </table>
+        </thead>
+            <tbody>
+                {coins.filter(coin => ['BTC', 'ETH', 'XRP', 'LTC', 'BCH'].includes(coin.symbol)).map((coin, index) => (
+                <tr key={index}>
+                    <td>{coin.name}</td>
+                    <td>{coin.symbol}</td>
+                    <td>${coin.price_usd}</td>
+                    <td style={{ color: coin.percent_change_24h < 0 ? '#FFA3A6' : '#B1FFC2' }}>{coin.percent_change_24h}%</td>
+                    <td><img src={getIcon(coin.symbol)} alt={`${coin.symbol} icon`} className="icon-image" /></td>
+                </tr>
+                ))}
+            </tbody>
+        </table>
     </div>
   );
 };

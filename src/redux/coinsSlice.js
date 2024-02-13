@@ -20,6 +20,7 @@ export const fetchCoinData = createAsyncThunk(
     }
   }
 );
+// console.log(fetchCoinData);
 // Define slice with initial state and reducers
 const coinsSlice = createSlice({
   name: 'coins',
@@ -39,6 +40,7 @@ const coinsSlice = createSlice({
         state.loading = false;
         state.error = null;
         state.coins = action.payload;
+        console.log(action.payload);
       })
       .addCase(fetchCoinData.rejected, (state, action) => {
         state.loading = false;
