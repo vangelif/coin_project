@@ -1,5 +1,4 @@
 import React from 'react';
-// import Coin from './Coin';
 import Nav from './Nav';
 import Home from './Home';
 

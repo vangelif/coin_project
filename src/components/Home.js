@@ -1,5 +1,5 @@
 import React from 'react';
-import Coin from './Coin';
+import Coin from './Coin/Coin';
 import Splash from './Splash/Splash';
 import Capabilities from './Capabilities/Capabilities';
 
