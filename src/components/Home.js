@@ -16,6 +16,7 @@ const Home = () => {
                 <h2>register component</h2>
             </section>    
             <footer>
+                {/* Antoine */}
                 <h2>form component</h2>
             </footer>
         </article>

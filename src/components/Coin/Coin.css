@@ -1,26 +1,26 @@
 .coins {
     padding: 0% 16%;
+    background-color: black;
 }
 
 .coins__card {
-    background-color: #8C8C8C;
+    background-color: hsl(0, 0%, 22%);
     border-radius: 5%;
-    border: 1px solid white;
+    border: 0.3px solid white;
     padding: 3% 6%;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15%;
+    /* display: flex;
+    flex-direction: column; */
 }
 
 .coins__item {
-    /* background-color: #A7A7A7; */
-    display: flex;
-    flex-direction: column;
-    gap: 15%;
+    padding: 3% 0%;
+    /* display: flex;
+    flex-direction: column; */
+    /* gap: 15%; */
 }
 
 .coins__item_top {
-    background-color: #8C8C8C;
+    background-color: hsl(0, 0%, 22%);
     display: flex;
     flex-direction: row;
     gap: 5%;
@@ -29,11 +29,13 @@
 }
 
 .coins__item_top img {
-    background-color: #8C8C8C;
+    background-color: hsl(0, 0%, 22%);
+    width: 25px;
+    height: 25px;
 }
 
 .coins__item_top .coins__item_top_symbol {
-    background-color: #8C8C8C;
+    background-color: hsl(0, 0%, 22%);
 }
 
 .coins__item_top_symbol {
@@ -41,8 +43,7 @@
     font-weight: 500;
 }
 
-.coins__item_top_name {
-    
+.coins__item_top_name {    
     background-color: #FFF8D6;
     font-size: 7.84px;
     font-weight: 500;
@@ -57,7 +58,7 @@
 }
 
 .coins_item_price {
-    background-color: #8C8C8C;
+    background-color: hsl(0, 0%, 22%);
     padding: 5% 0%;
     font-size: 17.43px;
     font-weight: 700;

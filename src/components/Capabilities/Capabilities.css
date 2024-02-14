@@ -3,7 +3,8 @@
     flex-direction: column;
     align-items: center;
     padding: 22% 5%;
-    /* background-color: lightcyan; */
+    background-color: black;
+    /* margin: -10% 0%; */
 }
 
 .capabilities__title {

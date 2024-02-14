@@ -1,6 +1,8 @@
 import React from 'react';
 import Nav from './Nav';
 import Home from './Home';
+import Footer from './Footer/Footer';
+import About from './About/About';
 
 const Layout = () => {
   return (
@@ -8,8 +10,8 @@ const Layout = () => {
         <Nav />
         <Home />
         <h2>gallery component</h2>
-        <h2>about component</h2>
-        <h2>footer component</h2>
+        <About />
+        <Footer />
     </>
   );
 };

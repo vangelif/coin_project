@@ -1,0 +1,17 @@
+.footer {
+    font-size: 12px;
+    text-align: center;
+    padding: 10% 5%;
+    color: #888888;
+    background-color: black;
+}
+
+.footer a {
+    color: #888888;
+}
+
+.footer img {
+    padding: 10% 0%;
+    width: 182px;
+    height: 60px;
+}

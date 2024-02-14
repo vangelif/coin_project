@@ -57,9 +57,13 @@ const Coin = () => {
                             <div class="coins_item_price">${parseFloat(coin.price_usd).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 4 })}</div>
 
                             <div style={{ color: coin.percent_change_24h < 0 ? '#FFA3A6' : '#B1FFC2' }}>
-                            <IoIosArrowDropupCircle style={{ color: coin.percent_change_24h < 0 ? '#FFA3A6' : '#B1FFC2' }} />
+                              {coin.percent_change_24h < 0 ? (
+                                <IoIosArrowDropdownCircle style={{ color: coin.percent_change_24h < 0 ? '#FFA3A6' : '#B1FFC2' }} />
+                              ) : (
+                                <IoIosArrowDropupCircle style={{ color: coin.percent_change_24h < 0 ? '#FFA3A6' : '#B1FFC2' }} />
+                              )}
                               {coin.percent_change_24h}%
-                              </div>
+                            </div>
                         </div>
           </section>
        ))}
@@ -69,8 +73,3 @@ const Coin = () => {
 };
 
 export default Coin;
-
-
-// 
-// <IoIosArrowDropdownCircle />  <IoIosArrowDropupCircle />                             <div style={{ color: coin.percent_change_24h < 0 ? '#FFA3A6' : '#B1FFC2' }}>                          {coin.percent_change_24h}%
-//                               </div> please put the two arrows in the condition to render as well
