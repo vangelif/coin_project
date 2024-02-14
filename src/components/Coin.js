@@ -24,8 +24,6 @@ const getIcon = (symbol) => {
     }
 };
 
-// B1FFC2 green
-// FFA3A6 red
 const Coin = () => {
   const dispatch = useDispatch();
   const coins = useSelector(showCoins);
@@ -41,8 +39,8 @@ const Coin = () => {
 
   return (
     <div>
-      <h2>Coin Data</h2>
-      <button>CLICK HERE</button>
+      <h2>coin component</h2>
+      <button>TEST BUTTON</button>
       <table>
         <thead>
             <tr>
