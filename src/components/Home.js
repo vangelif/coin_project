@@ -1,6 +1,7 @@
 import React from 'react';
 import Coin from './Coin';
 import Splash from './Splash/Splash';
+import Capabilities from './Capabilities/Capabilities';
 
 const Home = () => {
     return (
@@ -11,11 +12,7 @@ const Home = () => {
             </header>
             <section>
                 <Coin />
-            </section>
-            <section>
-                <h2>capabilities component</h2>    
-            </section>
-            <section>
+                <Capabilities />
                 <h2>register component</h2>
             </section>    
             <footer>

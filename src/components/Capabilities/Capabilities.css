@@ -1,0 +1,38 @@
+.capabilities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 22% 5%;
+    /* background-color: lightcyan; */
+}
+
+.capabilities__title {
+    text-align: center;
+    font-weight: 300;
+    font-size: 32px;
+    padding-bottom: 8%;
+}
+
+.capabilities__title span {
+    font-weight: 700;
+}
+
+.capabilities hr {
+    width: 30%;
+    color: green;
+    margin-bottom: 8%;
+}
+
+.capabilities__info {
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 10%;
+}
+
+.capabilities__info span {
+    font-weight: 700;
+}
+
+/* .capabilities__cards {
+    background-color: blueviolet;
+} */

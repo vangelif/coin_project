@@ -1,0 +1,44 @@
+.cards-container {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 2%;
+}
+
+.cards__item {
+    border: 3px solid red;
+    border-radius: 3%;
+    padding: 15% 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards__card {
+    display: flex;
+    flex-direction: row;
+}
+
+.cards__item h4 {
+    font-size: 20px;
+    width: 80%;
+}
+
+.cards__item img {
+    /* width: 20%; */
+    height: 55px;
+    width: 55px;
+}
+
+.cards__item hr {
+    width: 20%;
+    color: green;
+    margin: 10% 0%;
+}
+
+.cards__item p {
+    font-size: 14px;
+    padding-right: 15%;
+}
+
+.cards__item p span {
+    font-weight: 700;
+}
