@@ -1,0 +1,38 @@
+.register {
+    background-color: black;
+}
+
+.register__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 15% 5%;
+}
+
+.register__title {
+    font-size: 24px;
+    padding: 10% 0%;
+}
+
+.register__cto {
+    font-size: 16px;
+    padding: 10% 5%;
+}
+
+.register__item {
+    padding: 7% 0%;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.register__item_day {
+    padding: 7% 0%;
+}
+
+.register__item_time {
+    padding: 7% 0%;
+}
+
+.register__item_place {
+    padding: 3% 0%;
+}

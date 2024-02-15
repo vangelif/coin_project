@@ -54,13 +54,13 @@ const Coin = () => {
                           </div>
                             <hr />
                             
-                            <div class="coins_item_price">${parseFloat(coin.price_usd).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 4 })}</div>
+                            <div class="coins__item_price">${parseFloat(coin.price_usd).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 4 })}</div>
 
-                            <div style={{ color: coin.percent_change_24h < 0 ? '#FFA3A6' : '#B1FFC2' }}>
+                            <div style={{ color: coin.percent_change_24h < 0 ? '#FFA3A6' : '#B1FFC2', fontSize: '12.20px' }}>
                               {coin.percent_change_24h < 0 ? (
-                                <IoIosArrowDropdownCircle style={{ color: coin.percent_change_24h < 0 ? '#FFA3A6' : '#B1FFC2' }} />
+                                <IoIosArrowDropdownCircle style={{ color: coin.percent_change_24h < 0 ? '#FFA3A6 !important' : '#B1FFC2 !important', width: '11px', height: '8px' }} />
                               ) : (
-                                <IoIosArrowDropupCircle style={{ color: coin.percent_change_24h < 0 ? '#FFA3A6' : '#B1FFC2' }} />
+                                <IoIosArrowDropupCircle style={{ color: coin.percent_change_24h < 0 ? '#FFA3A6 !important' : '#B1FFC2 !important', width: '11px', height: '8px' }} />
                               )}
                               {coin.percent_change_24h}%
                             </div>

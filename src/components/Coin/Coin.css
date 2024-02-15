@@ -57,7 +57,7 @@
     width: 98%;
 }
 
-.coins_item_price {
+.coins__item_price {
     background-color: hsl(0, 0%, 22%);
     padding: 5% 0%;
     font-size: 17.43px;
