@@ -41,6 +41,10 @@
     padding-bottom: 10%;
 }
 
+.splash__button button {
+    background-color: #29A643;
+}
+
 .splash__note {
     font-size: 14px;
     font-weight: 400;

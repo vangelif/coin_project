@@ -3,6 +3,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import "./Form.css";
 import "./Datepicker.css";
+import { useNavigate } from 'react-router-dom';
 
 const Form = () => {
     const [step, setStep] = useState(1);
@@ -11,6 +12,7 @@ const Form = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [errors, setErrors] = useState({});
+    const [showSuccessRegistration, setShowSuccessRegistration] = useState(false);
 
     const totalSteps = 2; // Total number of steps in the form
 
@@ -73,6 +75,16 @@ const Form = () => {
 
         if (Object.keys(newErrors).length === 0) {
             console.log("Form submitted successfully");
+            setShowSuccessRegistration(true);
+            setTimeout(() => {
+                setShowSuccessRegistration(false);
+                setStep(1);
+                setFullName("");
+                setDob(null);
+                setEmail("");
+                setPassword("");
+                setErrors({});
+            }, 3000);
         } else {
             setErrors(newErrors);
         }
@@ -107,7 +119,7 @@ const Form = () => {
                             id="dob"
                             selected={dob}
                             onChange={(date) => setDob(date)}
-                            dateFormat="dd/mm/yyyy"
+                            dateFormat="dd/MM/yyyy"
                             placeholderText="Select date here..."
                             showYearDropdown
                             showMonthDropdown
@@ -120,11 +132,12 @@ const Form = () => {
 
                         {errors.dob && <span className="error">{errors.dob}</span>}
                     <button 
-                    className={`form__button ${Object.keys(errors).length === 0 ? 'valid-button' : 'invalid-button'}`} 
-                    type="submit" 
-                    disabled={Object.keys(errors).length > 0} 
+                        className={`form__button ${
+                            (Object.keys(errors).length > 0 || fullName === '' || dob === '') ? 'invalid-button' : 'valid-button'
+                        }`} 
+                        type="submit"
                 >
-                    Contiue</button>
+                    Continue</button>
                 </form>
             )}
             {step === 2 && (
@@ -134,7 +147,8 @@ const Form = () => {
                         <input 
                             type="email" 
                             id="email" 
-                            value={email} 
+                            value={email}
+                            placeholder="Type email here..." 
                             onChange={(e) => setEmail(e.target.value)} 
                         />
                         {errors.email && <span className="error">{errors.email}</span>}
@@ -145,13 +159,25 @@ const Form = () => {
                             type="password" 
                             id="password" 
                             value={password} 
+                            placeholder="Type password here..."
                             onChange={(e) => setPassword(e.target.value)} 
                         />
                     </div>
                         {errors.password && <span className="error">{errors.password}</span>}
-                    <button className="form__button" type="submit">Register Now</button>
+                        <button 
+                        className={`form__button ${
+                            (Object.keys(errors).length > 0 || fullName === '' || dob === '') ? 'invalid-button' : 'valid-button'
+                        }`} 
+                        type="submit"
+                >
+                    Register Now</button>
                 </form>
             )}
+                {showSuccessRegistration && (
+                    <div className="popup">
+                        Registration successful!
+                    </div>
+                )}
         </div>
     );
 };
