@@ -103,17 +103,19 @@ const Form = () => {
                 <form onSubmit={handleStep1Submit}>
                     <div className="form__input">
                         <label htmlFor="fullName">Full Name:</label>
-                        <input 
-                            type="text" 
-                            id="fullName" 
-                            value={fullName} 
+                        <div>
+                        <input
+                            type="text"
+                            id="fullName"
+                            value={fullName}
                             placeholder="Type full name here..."
-                            onChange={(e) => setFullName(e.target.value)} 
-                            />
+                            onChange={(e) => setFullName(e.target.value)} />
+                        </div>
                     </div>
-                        {errors.fullName && <span className="error">{errors.fullName}</span>}
+                    {errors.fullName && <span className="error">{errors.fullName}</span>}
                     <div className="form__input">
                         <label htmlFor="dob">Date of Birth:</label>
+                        <div>
                         <DatePicker
                             id="dob"
                             selected={dob}
@@ -125,20 +127,22 @@ const Form = () => {
                             scrollableMonthYearDropdown
                             scrollableYearDropdown
                             yearDropdownItemNumber={50}
-                            className="custom-datepicker"
-                        />
+                            className="custom-datepicker" />
+                        </div>
                     </div>
 
-                        {errors.dob && <span className="error">{errors.dob}</span>}
-                    <button 
-                        className={`form__button ${
-                            (Object.keys(errors).length > 0 || fullName === '' || dob === '') ? 'invalid-button' : 'valid-button'
-                        }`} 
+                    {errors.dob && <span className="error">{errors.dob}</span>}
+                    <button
+                        className={`form__button ${(Object.keys(errors).length > 0 || fullName === '' || dob === '') ? 'invalid-button' : 'valid-button'}`}
                         type="submit"
-                >
-                    Continue</button>
+                    >
+                        Continue</button>
                 </form>
             )}
+            <footer class="form__footer">
+                <p>Don't have an account? <a style={{ color: 'red' }} href="/">Create one here</a> and register for the event</p>
+                <p class="form__footer_p">Terms and Conditions apply*. To read the full T&Cs, click <span style={{ color: 'red' }}>here</span>.</p>
+            </footer>
             {step === 2 && (
                 <form onSubmit={handleStep2Submit}>
                     <div className="form__input">

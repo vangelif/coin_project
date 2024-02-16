@@ -102,17 +102,13 @@ Use this project in the browsers of desktops and mobile devices
 - [@twitter](https://twitter.com/vangfot)
 - [@linkedin](https://www.linkedin.com/in/vangfot/)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## 🔭 Future Features <a name="future-features"></a>
 
 - Build the backend.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## 🤝 Contributing <a name="contributing"></a>
 
-Feel free to check the [issues page](https://github.com/vangelif/coin_project/issues).
+Feel free to check the [issues](https://github.com/vangelif/coin_project/issues) page.
 
 ## ⭐️ Show your support <a name="support"></a>
 
@@ -121,8 +117,6 @@ If you like this project, please let me know and we can improve it further. You 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 Special thanks for Figma for the design.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📝 License <a name="license"></a>
 
