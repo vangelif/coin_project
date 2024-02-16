@@ -3,8 +3,7 @@
     flex-direction: column;
     align-items: center;
     padding: 22% 5%;
-    background-color: black;
-    /* margin: -10% 0%; */
+    background-repeat: no-repeat;
 }
 
 .capabilities__title {
@@ -33,7 +32,3 @@
 .capabilities__info span {
     font-weight: 700;
 }
-
-/* .capabilities__cards {
-    background-color: blueviolet;
-} */

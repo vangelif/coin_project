@@ -9,6 +9,7 @@ import bchIcon from '../../assets/bch.png';
 import { IoIosArrowDropupCircle } from "react-icons/io";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
 import './Coin.css';
+import midImg from '../../assets/mobile/mid.png';
 
 
 const getIcon = (symbol) => {
@@ -44,6 +45,7 @@ const Coin = () => {
   return (
 
     <div class="coins">
+      <div class="coins__background" style={{ backgroundImage: `url(${midImg})` }} />
       {coins.filter(coin => ['BTC', 'ETH', 'XRP', 'LTC', 'BCH'].includes(coin.symbol)).map((coin, index) => (
         <section class="coins__card">
                         <div key={index} class="coins__item">

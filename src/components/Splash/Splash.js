@@ -1,10 +1,10 @@
 // import React from 'react';
 import './Splash.css';
-
+import topBalls from '../../assets/mobile/top.png';
 
 const Spash = () => {
     return (
-        <div class="splash">
+        <div style={{ backgroundImage: `url(${topBalls})` }} class="splash">
             <h2 class="splash__title">TRADE WITH</h2>
             <p class="splash__info1">
                 <span>Zero Swaps</span> on All XM Ultra Low Accounts for more than 25 instruments!
@@ -19,7 +19,7 @@ const Spash = () => {
                 New to trading? Try a <a href="#">Demo account.</a>
             </span>
             <footer class="splash__footer">
-                Terms and Conditions apply<span style={{ color: 'red' }}>*</span>. To read the full T&Cs, <a href="#" style={{ color: 'red' }}>click here</a>.
+                Terms and Conditions apply<span style={{ color: 'red' }}>*</span>. To read the full T&Cs, <a href="#" style={{ color: 'red', textDecoration: 'none' }}>click here</a>.
             </footer>
         </div>
     );

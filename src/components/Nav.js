@@ -1,10 +1,9 @@
-// import React from "react";
 import nav from '../assets/nav.png';
 
 const Nav = () => {
   return (
-    <nav>
-        <img src={nav} alt="Navbar" />
+    <nav style={{ height: '96px' }}>
+        <img style={{ width: '100%'}} src={nav} alt="Navbar" />
     </nav>
   );
 };

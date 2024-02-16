@@ -1,9 +1,10 @@
 import './Capabilities.css'
 import Cards from './Cards/Cards'
+import bottomImg from '../../assets/mobile/bottom.png'
 
 const Capabilities = () => {
     return (
-        <div class="capabilities">
+        <div style={{ backgroundImage: `url(${bottomImg})` }} class="capabilities">
             <h2 class="capabilities__title">Why <span>TRADE</span>
             <br />
             with XM?
