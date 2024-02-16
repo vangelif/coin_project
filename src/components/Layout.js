@@ -3,13 +3,14 @@ import Nav from './Nav';
 import Home from './Home';
 import Footer from './Footer/Footer';
 import About from './About/About';
+import Gallery from './Gallery/Gallery';
 
 const Layout = () => {
   return (
     <>
         <Nav />
         <Home />
-        <h2>gallery component</h2>
+        <Gallery />
         <About />
         <Footer />
     </>

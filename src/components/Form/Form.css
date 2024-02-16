@@ -1,0 +1,57 @@
+.form {
+  background-color: black;
+  padding: 2% 15%;
+}
+
+.form__progress-bar-title {
+  padding: 10% 0%;
+}
+
+.form__progress-bar-container {
+  height: 5px; 
+  background-color: #fffefe; 
+  border-radius: 5px; 
+}
+
+.form__progress-bar {
+  height: 100%;
+  background-color: #0ac213;
+}
+
+.form__input {
+  padding: 10% 0%;
+}
+
+.form__input input {
+  width: auto;
+    border: none;
+    padding-block: 6%;
+    padding-inline: 3%;
+    font-size: 16px;
+    margin-top: 10%;
+    color: black
+  }
+
+  input::placeholder {
+    color: black;
+    font-style: italic;
+  }
+
+.form .error {
+  color: red;
+  font-style: italic;
+}
+
+.form__button {
+  margin: 8% 0%;
+}
+
+.valid-button {
+  background-color: green;
+  color: white;
+}
+
+.invalid-button {
+  background-color: grey;
+  color: white;
+}

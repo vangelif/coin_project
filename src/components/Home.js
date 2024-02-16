@@ -3,7 +3,7 @@ import Coin from './Coin/Coin';
 import Splash from './Splash/Splash';
 import Capabilities from './Capabilities/Capabilities';
 import Register from './Register/Register';
-
+import Form from './Form/Form';
 
 const Home = () => {
     return (
@@ -18,7 +18,7 @@ const Home = () => {
                 <Register />
             </section>    
             <footer>
-                <h2>form component</h2>
+                <Form />
             </footer>
         </article>
     </main>

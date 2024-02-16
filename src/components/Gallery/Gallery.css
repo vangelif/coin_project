@@ -1,0 +1,37 @@
+.gallery__container {
+    background-color: #b6b6b6;
+}
+
+.gallery {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent items from wrapping to the next line */
+    padding: 0% 2%;
+  }
+
+  .gallery__title {
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 5% 0%;
+  }
+
+  .gallery__inner {
+    display: inline-flex;
+    padding: 15% 0%;
+    justify-content: center;
+    align-items: center;
+  }
+
+.gallery__inner_arrow {
+    color: black
+}
+
+  .card {
+    width: 90px; 
+    height: 75px; 
+    background-color: #c9c9c9;
+    margin-right: 1%;
+    color: black;
+    border: 3px solid white;
+  }
