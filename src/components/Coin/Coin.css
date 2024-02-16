@@ -6,17 +6,13 @@
 .coins__card {
     background-color: hsl(0, 0%, 22%);
     border-radius: 5%;
-    border: 0.3px solid white;
+    border: 0.05px solid grey;
     padding: 3% 6%;
-    /* display: flex;
-    flex-direction: column; */
+    margin: 10% 0%;
 }
 
 .coins__item {
     padding: 3% 0%;
-    /* display: flex;
-    flex-direction: column; */
-    /* gap: 15%; */
 }
 
 .coins__item_top {
@@ -53,8 +49,17 @@
     padding-block: 2%;
 }
 
+.coins__card .coins__item div[path-color="negative"] svg path {
+    fill: #FFA3A6 !important;
+  }
+  
+  .coins__card .coins__item div[path-color="positive"] svg path {
+    fill: #B1FFC2 !important;
+  }
+
 .coins__item hr {
     width: 98%;
+    color: grey;
 }
 
 .coins__item_price {

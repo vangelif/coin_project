@@ -11,8 +11,8 @@ const Gallery = () => {
             
             <div class="gallery__inner">
             <MdKeyboardArrowLeft class="gallery__inner_arrow" />
-                <div class="card">Card 1</div>
-                <div class="card">Card 2</div>
+                <div class="card"></div>
+                <div class="card"></div>
                 {/* <div class="card">Card 3</div> */}
                 {/* <div class="card">Card 4</div>
                 <div class="card">Card 5</div>

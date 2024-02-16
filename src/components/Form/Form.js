@@ -3,7 +3,6 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import "./Form.css";
 import "./Datepicker.css";
-import { useNavigate } from 'react-router-dom';
 
 const Form = () => {
     const [step, setStep] = useState(1);
