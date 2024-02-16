@@ -59,8 +59,6 @@ This app is a desktop, tablet and mobile web application where a user can regist
 
 N/A
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## 💻 Getting Started <a name="getting-started"></a>
 
 Clone this repository to your desired folder:
@@ -68,8 +66,6 @@ Clone this repository to your desired folder:
 ```
 git clone https://github.com/vangelif/coin_project.git
 ```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Prerequisites
 
@@ -106,7 +102,6 @@ Use this project in the browsers of desktops and mobile devices
 - [@twitter](https://twitter.com/vangfot)
 - [@linkedin](https://www.linkedin.com/in/vangfot/)
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
@@ -117,8 +112,6 @@ Use this project in the browsers of desktops and mobile devices
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-Contributions, issues, and feature requests are welcome!
-
 Feel free to check the [issues page](https://github.com/vangelif/coin_project/issues).
 
 ## ⭐️ Show your support <a name="support"></a>
@@ -127,9 +120,7 @@ If you like this project, please let me know and we can improve it further. You 
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-Acknowledgements and suggestions for improvement are always welcome
-
-- Special thanks for Figma for the design.
+Special thanks for Figma for the design.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
