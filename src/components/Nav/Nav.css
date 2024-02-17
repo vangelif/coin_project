@@ -1,5 +1,5 @@
 .nav__image_container {
-    background-image: url("../assets/nav.png");
+    background-image: url("../../assets/nav.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -10,7 +10,7 @@
 
 @media screen and (min-width: 768px) {
     .nav__image_container {
-        background-image: url("../assets/nav-tablet.png");
+        background-image: url("../../assets/nav-tablet.png");
         background-repeat: no-repeat;
         background-size: cover;
     }  
@@ -22,7 +22,7 @@
 
 @media screen and (min-width: 1024px) {
     .nav__image_container {
-        background-image: url("../assets/desktop-logo.png");
+        background-image: url("../../assets/desktop-logo.png");
         background-size: contain;
         background-color: black;
         height: 140px;

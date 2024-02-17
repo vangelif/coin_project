@@ -4,7 +4,7 @@ import Splash from './Splash/Splash';
 import Capabilities from './Capabilities/Capabilities';
 import Register from './Register/Register';
 import Form from './Form/Form';
-import './Home.css';
+// import './Home.css';
 
 import backgroundImg from '../assets/mobile/back.png';
 
