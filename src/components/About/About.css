@@ -7,8 +7,8 @@
 .about hr {
     margin: 0 auto;
     text-align: center;
-    width: 15%;
-    border: 3px solid #D51820;
+    width: 12%;
+    border: 2px solid #D51820;
 }
 
 .about .about__title {
@@ -44,7 +44,6 @@
 .about .about__description {
     color: black;
     font-size: 14px;
-    /* font-weight: 700; */
 }
 
 .about p span {
@@ -72,4 +71,13 @@
 .about__container .about__container_description {
     font-size: 14px;
     color: black;
+}
+
+@media (min-width: 410px) {
+    .about__container-grid {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
 }
