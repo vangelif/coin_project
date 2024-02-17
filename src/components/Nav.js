@@ -1,13 +1,15 @@
-import nav from '../assets/nav.png';
+import './Nav.css';
 
 const Nav = () => {
   return (
-    <nav style={{ height: '95px' }}>
-        <img 
-          style={{ width: '100%'}} 
-          src={nav} 
-          alt="Navbar" />
+    <nav class="nav__image_container" style={{ height: '100px' }}>
+
+    <div class="nav__links">
+      <p>Homepage</p>
+      <p>Support</p>
+    </div>
     </nav>
+    
   );
 };
 
