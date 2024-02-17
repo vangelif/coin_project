@@ -3,37 +3,20 @@
     padding: 15% 0%;
 }
 
-.gallery {
-    overflow-x: auto;
-    white-space: nowrap; 
-    padding: 0% 2%;
-  }
-
-  .gallery__title {
+.gallery__title {
     color: black;
     text-align: center;
     font-size: 25px;
     font-weight: 700;
     padding: 3% 0%;
-  }
+}
 
-  .gallery__inner {
-    display: inline-flex;
-    padding: 5% 0%;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .gallery__inner svg path {
+.gallery__item svg path {
     color: #959595;
-  }
+}
 
-  .gallery__inner svg {
-    font-size: 55px;
-  }
-
-.gallery__inner_arrow {
-    color: black
+.gallery__item svg {
+    font-size: 45px;
 }
 
   .card {
@@ -45,3 +28,41 @@
     color: black;
     border: 2px solid white;
   }
+
+  .gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.gallery__item {
+    cursor: pointer;
+  }
+
+.desktop {
+  display: none;
+}
+
+  @media screen and (min-width: 410px) {
+    .gallery__container{
+      padding: 5% 0%;
+    }
+    .card {
+      width: 130px;
+      height: 130px;
+  }
+  .desktop {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .desktop {
+    display: block;
+  }
+
+  .card {
+    width: 160px;
+    height: 160px;
+  }
+}

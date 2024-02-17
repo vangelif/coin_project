@@ -7,19 +7,23 @@ const Gallery = () => {
         <section class="gallery__container">
             
         <div class="gallery__title">Event Gallery</div>
+
+
         <div class="gallery">
-            
-            <div class="gallery__inner">
-            <MdKeyboardArrowLeft class="gallery__inner_arrow" />
-                <div class="card"></div>
-                <div class="card"></div>
-                {/* <div class="card">Card 3</div> */}
-                {/* <div class="card">Card 4</div>
-                <div class="card">Card 5</div>
-                <div class="card">Card 5</div>
-                <div class="card">Card 5</div> */}
+                <div class="gallery__item">
+                <MdKeyboardArrowLeft />
+
+                </div>
+                <div class="gallery__item card"></div>
+                <div class="gallery__item card"></div>
+                <div class="gallery__item tablet card"></div>
+                <div class="gallery__item tablet card"></div>
+                <div class="gallery__item desktop card"></div>
+                <div class="gallery__item">
                 <MdKeyboardArrowRight />
-            </div>
+
+                </div>
+
         </div>
         </section>
     )
