@@ -2,17 +2,21 @@
   padding: 2% 15%;
 }
 
+.tablet {
+  display: none;
+}
+
 .form__progress-bar-title {
   padding: 10% 0%;
 }
 
-.form__progress-bar-container {
+.form__progress-bar-background {
   height: 5px; 
   background-color: #fffefe; 
   border-radius: 5px; 
 }
 
-.form__progress-bar {
+.form__progress-bar-line {
   height: 100%;
   background-color: #0ac213;
 }
@@ -81,7 +85,37 @@ input::placeholder {
   color: white;
 }
 
+/* smaller tablets - wider mobile */
+
 @media (min-width: 410px) {
+
+  .tablet {
+    display: block;
+  }
+
+  .form__progress-bar-title {
+    padding: 5% 0%;
+  }
+  
+  .form__progress-bar-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .form__progress-bar-grid-item {
+    padding: 0% 5%;
+  }
+
+  .form__progress-bar-background {
+    height: 5px; 
+    background-color: #fffefe; 
+    border-radius: 5px;
+  }
+  
+  .form__progress-bar-line {
+    height: 100%;
+    background-color: #0ac213;
+  }
 
 
   .form__input input {
@@ -93,6 +127,7 @@ input::placeholder {
   }
 }
 
+/* tablet 768px */
 @media (min-width: 768px) {
   
 }

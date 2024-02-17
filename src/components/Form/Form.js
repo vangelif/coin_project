@@ -93,12 +93,27 @@ const Form = () => {
 
     return (
         <div className="form">
-            <div className="form__progress-bar-title">
-                <span>Step {step}</span>
-            </div>
-            <div className="form__progress-bar-container">
-                <div className="form__progress-bar" style={{ width: `${progress}%` }} />
-            </div>
+            <section className="form__progress-bar-grid">
+                <div className="form__progress-bar-grid-item">
+                    <div className="form__progress-bar-title">
+                        {/* <span>Step {step - 1}</span> */}
+                        <span>Step 1</span>
+                    </div>
+                    <div className="form__progress-bar-background">
+                        <div className="form__progress-bar-line" style={{ width: `${progress}%` }} />
+                    </div>
+                </div>
+                {/* item 2 */}
+                <div className="form__progress-bar-grid-item tablet">
+                    <div className="form__progress-bar-title">
+                        {/* <span>Step {step + 1}</span> */}
+                        <span>Step 2</span>
+                    </div>
+                    <div className="form__progress-bar-background">
+                        <div className="form__progress-bar-line" style={{ width: `${progress - 50}%` }} />
+                    </div>
+                </div>
+            </section>
             {step === 1 && (
                 <form onSubmit={handleStep1Submit}>
                     <div className="form__input">
@@ -139,10 +154,10 @@ const Form = () => {
                         Continue</button>
                 </form>
             )}
-            <footer class="form__footer">
+            {/* <footer class="form__footer">
                 <p>Don't have an account? <a style={{ color: 'red' }} href="/">Create one here</a> and register for the event</p>
                 <p class="form__footer_p">Terms and Conditions apply*. To read the full T&Cs, click <span style={{ color: 'red' }}>here</span>.</p>
-            </footer>
+            </footer> */}
             {step === 2 && (
                 <form onSubmit={handleStep2Submit}>
                     <div className="form__input">
@@ -181,6 +196,10 @@ const Form = () => {
                         Registration successful!
                     </div>
                 )}
+                          <footer class="form__footer">
+                <p>Don't have an account? <a style={{ color: 'red' }} href="/">Create one here</a> and register for the event</p>
+                <p class="form__footer_p">Terms and Conditions apply*. To read the full T&Cs, click <span style={{ color: 'red' }}>here</span>.</p>
+            </footer>
         </div>
     );
 };
