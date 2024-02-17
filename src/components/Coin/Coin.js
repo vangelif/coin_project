@@ -69,6 +69,7 @@ const Coin = () => {
                                {coin.percent_change_24h}%
                             </div>
                         </div>
+
           </section>
        ))}
     </div>

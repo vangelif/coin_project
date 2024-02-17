@@ -12,7 +12,6 @@ const Gallery = () => {
         <div class="gallery">
                 <div class="gallery__item">
                 <MdKeyboardArrowLeft />
-
                 </div>
                 <div class="gallery__item card"></div>
                 <div class="gallery__item card"></div>

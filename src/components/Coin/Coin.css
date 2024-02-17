@@ -82,3 +82,30 @@
     width: 8px;
     height: 11px;
 }
+
+@media screen and (min-width: 410px) {
+    .coins {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5%;
+        padding: 0% 2%;
+    }
+
+    .coins__card {
+        padding: 2% 8%; 
+        margin: 2% 0%;
+        /* padding-right: 18%; */
+    }
+
+    .coins__item_top {
+
+        /* background-color: hsl(0, 0%, 22%); */
+        /* display: flex;
+        flex-direction: row; */
+        /* justify-content: start; */
+        gap: 5%;
+        /* align-items: center; */
+        /* padding: 10% 0%; */
+    }
+}
