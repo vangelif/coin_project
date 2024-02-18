@@ -7,7 +7,7 @@
 .cards__item {
     background-color: #0B0819;
     border-radius: 5%;
-    padding: 15% 10%;
+    padding: 5% 10%;
     display: flex;
     flex-direction: column;
 }
@@ -15,11 +15,12 @@
 .cards__card {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .cards__item h4 {
     font-size: 20px;
-    width: 80%;
+    padding-bottom: 10%;
 }
 
 .cards__item img {
@@ -27,14 +28,9 @@
     width: 55px;
 }
 
-.cards__item hr {
-    width: 20%;
-    color: green;
-    margin: 10% 0%;
-}
-
 .cards__item p {
     font-size: 14px;
+    padding-top: 15%;
     padding-right: 15%;
 }
 
@@ -43,8 +39,31 @@
 }
 
 @media screen and (min-width: 410px) {
+
+    .cards__item {
+        background-color: #0B0819;
+        border-radius: 5%;
+        padding: 7% 7%;
+        display: flex;
+        flex-direction: column;
+    }
+
     .cards__item img {
         height: 85px;
         width: 85px;
     }
+
+    .cards__cardtop h4 {
+        padding-bottom: 10%;
+    }
+
+    .cards__cardtop .cards__line {
+        width: 25%;
+    }
+    .cards__item p {
+        font-size: 14px;
+        padding-top: 7%;
+        padding-right: 15%;
+    }
+    
 }
