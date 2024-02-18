@@ -1,3 +1,10 @@
+.footer__desktop {
+    display: none;
+}
+.footer__container {
+    background-color: black;
+}
+
 .footer {
     font-size: 12px;
     text-align: center;
@@ -28,4 +35,44 @@
     .footer img {
         padding: 5% 0%; 
     }
+}
+
+@media screen and (min-width: 1024px) {
+    .footer__desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3% 3%;
+        border-bottom: 1px solid #888888;
+    }
+
+    .footer__desktop_left {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5%;
+    }
+
+    .footer__desktop_left img {
+        width: 130px;
+        height: 30px;
+    }
+
+    .footer__desktop_right p {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5%;
+        color: #888888;
+
+    }
+
+    .footer__desktop_right p svg {
+        padding: 0% 0%;
+        font-size: 30px;
+    }
+
 }
