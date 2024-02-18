@@ -7,11 +7,13 @@ import alldayIcon from '../../assets/about/allday.png'
 const About = () => {
     return (
         <div class="about">
-            <hr />
+            <div class="about__desktop">
+            <hr class="about__line" />
             <section class="about__title">
                 Big<span class="about__title_fullstop">Fair</span> <span class="about__title_fullstop2">Human</span>
             </section>
             <p class="about__description">Learn why <span>over 5 million clients choose XM</span> as their trusted online broker.</p>
+            </div>
             <section class="about__container-grid">
                 <div class="about__container">
                     <img src={shieldIcon} alt="shield" />

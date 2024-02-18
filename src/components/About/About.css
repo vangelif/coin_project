@@ -74,6 +74,17 @@
 }
 
 @media (min-width: 410px) {
+    .about {
+        padding: 7% 7%;    
+    }
+
+    .about .about__title {
+        color: black;
+        font-size: 35px;
+        font-weight: 700;
+        padding: 3% 0%;
+    }
+
     .about__container-grid {
         display: grid;
         grid-template-rows: 1fr 1fr;
@@ -81,3 +92,30 @@
         grid-gap: 10px;
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .about {
+        display: flex;
+        flex-direction: row;
+    }
+    .about__desktop {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .about__desktop .about__line {
+        display: none;
+    }
+
+    .about__desktop .about__title {
+        font-size: 80px;
+        text-align: left;
+    }
+
+    .about__desktop .about__description {
+        font-size: 17px;
+        text-align: left;
+        padding-right: 20%;
+    }
+ }
