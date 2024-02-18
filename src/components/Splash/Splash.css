@@ -84,4 +84,11 @@
     .splash__note {
         padding-bottom: 3%;
     }
+
+    @media screen and (min-width: 1024px) {
+        .splash {
+            background-image: url(../../assets/splash-desktop.png);
+            padding: 7% 15%;
+        }
+    }
 }
