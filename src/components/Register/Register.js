@@ -9,25 +9,27 @@ const Register = () => {
             <section class="register__container">
                 <div class="register__title">- Register Here -</div>
                 <p class="register__cto">Join us to celebrate our biggest night of the year.</p>
+                <hr />
+              <div class = "items_container">
                 <div class="register__item">
                     <BsCalendar2Date style={{ width: '23px', height: '30px' }} />
                     <p class="register__item_day">05 November 2022</p>
                     <hr />
                 </div>
-                <div class="register__item">
+                <div class="register__item time">
                     <LuClock2 style={{ width: '23px', height: '30px' }} />
                     <p class="register__item_time">16:00 - 23:00</p>
                     <hr />
                 </div>
                 <div class="register__item">
                     <IoLocationOutline style={{ width: '23px', height: '30px' }} />
-                    <p class="register__item_place">CENTARA GRAND & BANGKOK</p>
-                    <p>CONVENTION CENTRE, BANGKOK</p>
+                    <p class="register__item_place">CENTARA GRAND & BANGKOK <br />CONVENTION CENTRE, BANGKOK</p>
                 </div>
+            </div>
+            <hr />
             </section>
         </div>
     );
-
 }
 
 export default Register;
