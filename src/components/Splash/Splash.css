@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     padding: 22% 10%;
+    background-image: url(../../assets/mobile/top.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -56,4 +57,31 @@
     font-size: 12px;
     font-weight: 400;
     text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .splash {
+        background-image: url(../../assets/splash-tablet.png);
+        padding: 7% 15%;
+    }
+
+    .splash__title {
+        font-size: 16px;
+        font-weight: 400;
+        padding-bottom: 2%;
+    }
+
+    .splash__info1 {
+        padding: 2% 10%;
+    }
+    .splash__info2 {
+        padding: 5% 15%;
+    }
+    .splash__button {
+        width: 55%;
+        padding-bottom: 5%;
+    }
+    .splash__note {
+        padding-bottom: 3%;
+    }
 }

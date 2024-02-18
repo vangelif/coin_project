@@ -1,10 +1,9 @@
 // import React from 'react';
 import './Splash.css';
-import topBalls from '../../assets/mobile/top.png';
 
 const Spash = () => {
     return (
-        <div style={{ backgroundImage: `url(${topBalls})` }} class="splash">
+        <div class="splash">
             <h2 class="splash__title">TRADE WITH</h2>
             <p class="splash__info1">
                 <span>Zero Swaps</span> on All XM Ultra Low Accounts for more than 25 instruments!
