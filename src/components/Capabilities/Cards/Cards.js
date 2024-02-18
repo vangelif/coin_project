@@ -8,7 +8,7 @@ import './Cards.css';
 const Cards = () => {
     return (
     <article class="cards-container">
-        <div class="cards__item">
+        <div class="cards__item item_1">
             <section class="cards__card">
                 <div class="cards__cardtop">
                     <h4>Superior Trade Execution</h4>       
@@ -21,7 +21,7 @@ const Cards = () => {
                 </p>
         </div>
 
-        <div class="cards__item">
+        <div class="cards__item item_2">
             <section class="cards__card">
                 <div class="cards__cardtop">
                     <h4>Competitive<br /> Pricing</h4>
@@ -34,7 +34,7 @@ const Cards = () => {
                 </p>
         </div>
 
-        <div class="cards__item">
+        <div class="cards__item item_3">
             <section class="cards__card">
                 <div class="cards__cardtop">
                     <h4>Advanced Technology</h4>
@@ -47,7 +47,7 @@ const Cards = () => {
                 </p>
         </div>
 
-        <div class="cards__item">
+        <div class="cards__item item_4">
             <section class="cards__card">
                 <div class="cards__cardtop">
                     <h4>Start with $5</h4>  

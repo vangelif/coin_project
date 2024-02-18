@@ -50,3 +50,13 @@
         padding-bottom: 7%;
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .capabilities {
+        padding: 0% 5%;
+    }
+
+    .capabilities__info {
+        padding: 5% 18%;
+    }
+}
