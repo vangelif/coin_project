@@ -2,14 +2,14 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 const BASE_API = 'https://api.coinlore.net/api/tickers';
-// const PROXY_URL = 'https://cors-anywhere.herokuapp.com/';
+const PROXY_URL = 'https://cors-anywhere.herokuapp.com/';
 
 export const fetchCoinData = createAsyncThunk(
   'coins/fetchCoinData',
   async () => {
     try {
-      // const response = await fetch(PROXY_URL + BASE_API);
-      const response = await fetch(BASE_API);
+      const response = await fetch(PROXY_URL + BASE_API);
+      // const response = await fetch(BASE_API);
 
       if (!response.ok) {
         throw new Error('Cannot fetch data');
