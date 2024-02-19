@@ -13,7 +13,7 @@ const Form = () => {
     const [errors, setErrors] = useState({});
     const [showSuccessRegistration, setShowSuccessRegistration] = useState(false);
 
-    const totalSteps = 2; // Total number of steps in the form
+    const totalSteps = 2;
 
     const validateFullName = () => {
         const regex = /^[a-zA-Z ]+$/;
@@ -116,87 +116,91 @@ const Form = () => {
             </section>
             {step === 1 && (
                 <form onSubmit={handleStep1Submit}>
-                    <div className="form__input">
-                        <label htmlFor="fullName">Full Name:</label>
-                        <div>
-                        <input
-                            type="text"
-                            id="fullName"
-                            value={fullName}
-                            placeholder="Type full name here..."
-                            onChange={(e) => setFullName(e.target.value)} />
+                    <article className="form__input_container">
+                        <div className="form__input">
+                            <label htmlFor="fullName">Full Name:</label>
+                            <div>
+                            <input
+                                type="text"
+                                id="fullName"
+                                value={fullName}
+                                placeholder="Type full name here..."
+                                onChange={(e) => setFullName(e.target.value)} />
+                            </div>
                         </div>
-                    </div>
-                    {errors.fullName && <span className="error">{errors.fullName}</span>}
-                    <div className="form__input">
-                        <label htmlFor="dob">Date of Birth:</label>
-                        <div>
-                        <DatePicker
-                            id="dob"
-                            selected={dob}
-                            onChange={(date) => setDob(date)}
-                            dateFormat="dd/MM/yyyy"
-                            placeholderText="Select date here..."
-                            showYearDropdown
-                            showMonthDropdown
-                            scrollableMonthYearDropdown
-                            scrollableYearDropdown
-                            yearDropdownItemNumber={50}
-                            className="custom-datepicker" />
+                        {errors.fullName && <span className="error">{errors.fullName}</span>}
+                        <div className="form__input">
+                            <label htmlFor="dob">Date of Birth:</label>
+                            <div>
+                            <DatePicker
+                                id="dob"
+                                selected={dob}
+                                onChange={(date) => setDob(date)}
+                                dateFormat="dd/MM/yyyy"
+                                placeholderText="Select date here..."
+                                showYearDropdown
+                                showMonthDropdown
+                                scrollableMonthYearDropdown
+                                scrollableYearDropdown
+                                yearDropdownItemNumber={50}
+                                className="custom-datepicker" />
+                            </div>
                         </div>
-                    </div>
-
+                    </article>
                     {errors.dob && <span className="error">{errors.dob}</span>}
-                    <button
-                        className={`form__button ${(Object.keys(errors).length > 0 || fullName === '' || dob === '') ? 'invalid-button' : 'valid-button'}`}
-                        type="submit"
-                    >
-                        Continue</button>
+                    <div className="form__button_container">
+                        <button
+                            className={`form__button ${(Object.keys(errors).length > 0 || fullName === '' || dob === '') ? 'invalid-button' : 'valid-button'}`}
+                            type="submit"
+                        >
+                            Continue</button>
+                    </div>
                 </form>
             )}
-            {/* <footer class="form__footer">
-                <p>Don't have an account? <a style={{ color: 'red' }} href="/">Create one here</a> and register for the event</p>
-                <p class="form__footer_p">Terms and Conditions apply*. To read the full T&Cs, click <span style={{ color: 'red' }}>here</span>.</p>
-            </footer> */}
+
             {step === 2 && (
                 <form onSubmit={handleStep2Submit}>
-                    <div className="form__input">
-                        <label htmlFor="email">Email:</label>
-                        <input 
-                            type="email" 
-                            id="email" 
-                            value={email}
-                            placeholder="Type email here..." 
-                            onChange={(e) => setEmail(e.target.value)} 
-                        />
-                        {errors.email && <span className="error">{errors.email}</span>}
-                    </div>
-                    <div className="form__input">
-                        <label htmlFor="password">Password:</label>
-                        <input 
-                            type="password" 
-                            id="password" 
-                            value={password} 
-                            placeholder="Type password here..."
-                            onChange={(e) => setPassword(e.target.value)} 
-                        />
-                    </div>
+                    <article className="form__input_container">
+                        <div className="form__input">
+                            <label htmlFor="email">Email:</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                value={email}
+                                placeholder="Type email here..." 
+                                onChange={(e) => setEmail(e.target.value)} 
+                            />
+                            {errors.email && <span className="error">{errors.email}</span>}
+                        </div>
+                        <div className="form__input">
+                            <label htmlFor="password">Password:</label>
+                            <input 
+                                type="password" 
+                                id="password" 
+                                value={password} 
+                                placeholder="Type password here..."
+                                onChange={(e) => setPassword(e.target.value)} 
+                            />
+                        </div>
+                    </article>
                         {errors.password && <span className="error">{errors.password}</span>}
-                        <button 
-                        className={`form__button ${
-                            (Object.keys(errors).length > 0 || fullName === '' || dob === '') ? 'invalid-button' : 'valid-button'
-                        }`} 
-                        type="submit"
-                >
-                    Register Now</button>
+                        <div className="form__button_container">
+                            <button 
+                            className={`form__button ${
+                                (Object.keys(errors).length > 0 || fullName === '' || dob === '') ? 'invalid-button' : 'valid-button'
+                            }`} 
+                            type="submit"
+                    >
+                        Register Now</button>
+                    </div>
                 </form>
             )}
                 {showSuccessRegistration && (
                     <div className="popup">
-                        Registration successful!
+                        🎊Registration successful!
                     </div>
                 )}
-                          <footer class="form__footer">
+            <footer class="form__footer">
                 <p>Don't have an account? <a style={{ color: 'red' }} href="/">Create one here</a> and register for the event</p>
                 <p class="form__footer_p">Terms and Conditions apply*. To read the full T&Cs, click <span style={{ color: 'red' }}>here</span>.</p>
             </footer>
