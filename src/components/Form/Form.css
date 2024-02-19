@@ -11,9 +11,9 @@
 }
 
 .form__progress-bar-background {
-  height: 5px; 
-  background-color: #fffefe; 
-  border-radius: 5px; 
+  height: 5px;
+  background-color: #fffefe;
+  border-radius: 5px;
 }
 
 .form__progress-bar-line {
@@ -26,13 +26,13 @@
 }
 
 .form__input input {
-    width: 100%;
-    border: none;
-    padding-block: 6%;
-    padding-inline: 3%;
-    font-size: 16px;
-    margin-top: 10%;
-    color: black
+  width: 100%;
+  border: none;
+  padding-block: 6%;
+  padding-inline: 3%;
+  font-size: 16px;
+  margin-top: 10%;
+  color: black;
 }
 
 .form__input .custom-datepicker {
@@ -50,8 +50,8 @@
 }
 
 input::placeholder {
-    color: black;
-    font-style: italic;
+  color: black;
+  font-style: italic;
 }
 
 .form .error {
@@ -64,14 +64,13 @@ input::placeholder {
   background-color: #0ac213;
   color: white;
   width: 105%;
-
 }
 
 .invalid-button {
   margin: 8% 0%;
-  background-color: grey; 
+  background-color: grey;
   width: 105%;
-  color: white; 
+  color: white;
 }
 
 .popup {
@@ -88,7 +87,6 @@ input::placeholder {
 /* smaller tablets - wider mobile */
 
 @media (min-width: 410px) {
-
   .tablet {
     display: block;
   }
@@ -96,7 +94,7 @@ input::placeholder {
   .form__progress-bar-title {
     padding: 5% 0%;
   }
-  
+
   .form__progress-bar-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -107,11 +105,11 @@ input::placeholder {
   }
 
   .form__progress-bar-background {
-    height: 5px; 
-    background-color: #fffefe; 
+    height: 5px;
+    background-color: #fffefe;
     border-radius: 5px;
   }
-  
+
   .form__progress-bar-line {
     height: 100%;
     background-color: #0ac213;
@@ -149,7 +147,6 @@ input::placeholder {
 
   .form__input {
     width: 40%;
-    
   }
 
   .form__button_container {
@@ -162,7 +159,6 @@ input::placeholder {
 
   .form__button {
     width: 60%;
-    
   }
 
   .invalid-button {
@@ -175,5 +171,4 @@ input::placeholder {
     margin: 2% 0%;
     cursor: pointer;
   }
-
 }

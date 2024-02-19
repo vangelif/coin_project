@@ -15,11 +15,11 @@ export const fetchCoinData = createAsyncThunk(
         throw new Error('Cannot fetch data');
       }
       const data = await response.json();
-      return data.data; 
+      return data.data;
     } catch (error) {
       throw new Error(error.message);
     }
-  }
+  },
 );
 // console.log(fetchCoinData);
 const coinsSlice = createSlice({

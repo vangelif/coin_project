@@ -1,31 +1,27 @@
 import './Gallery.css';
-import { MdKeyboardArrowRight } from "react-icons/md";
-import { MdKeyboardArrowLeft } from "react-icons/md";
+import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from 'react-icons/md';
 
-const Gallery = () => {
-    return(
-        <section class="gallery__container">
-            
-        <div class="gallery__title">Event Gallery</div>
+const Gallery = () => (
+  <section className="gallery__container">
 
+    <div className="gallery__title">Event Gallery</div>
 
-        <div class="gallery">
-                <div class="gallery__item">
-                <MdKeyboardArrowLeft />
-                </div>
-                <div class="gallery__item card"></div>
-                <div class="gallery__item card"></div>
-                <div class="gallery__item tablet card"></div>
-                <div class="gallery__item tablet card"></div>
-                <div class="gallery__item desktop card"></div>
-                <div class="gallery__item">
-                <MdKeyboardArrowRight />
+    <div className="gallery">
+      <div className="gallery__item">
+        <MdKeyboardArrowLeft />
+      </div>
+      <div className="gallery__item card" />
+      <div className="gallery__item card" />
+      <div className="gallery__item tablet card" />
+      <div className="gallery__item tablet card" />
+      <div className="gallery__item desktop card" />
+      <div className="gallery__item">
+        <MdKeyboardArrowRight />
 
-                </div>
+      </div>
 
-        </div>
-        </section>
-    )
-}
+    </div>
+  </section>
+);
 
 export default Gallery;

@@ -1,17 +1,17 @@
 .react-datepicker__month-read-view .react-datepicker__month-read-view--selected-month {
-    /* background-color: lightcoral; */
-    color: black;
-  }
-  
-  .react-datepicker__year-read-view .react-datepicker__year-read-view--selected-year {
-    /* background-color: lightcoral; */
-    color: black;
-  }
-    
-  .react-datepicker__header .react-datepicker__header__dropdown .react-datepicker__month-option {
-    color: black;
-  }
-  
-  .react-datepicker__header .react-datepicker__header__dropdown .react-datepicker__year-option {
-    color: black;
-  }
+  /* background-color: lightcoral; */
+  color: black;
+}
+
+.react-datepicker__year-read-view .react-datepicker__year-read-view--selected-year {
+  /* background-color: lightcoral; */
+  color: black;
+}
+
+.react-datepicker__header .react-datepicker__header__dropdown .react-datepicker__month-option {
+  color: black;
+}
+
+.react-datepicker__header .react-datepicker__header__dropdown .react-datepicker__year-option {
+  color: black;
+}

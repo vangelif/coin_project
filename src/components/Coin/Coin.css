@@ -1,115 +1,115 @@
 .coins {
-    padding: 0% 16%;
-    position: relative;
+  padding: 0% 16%;
+  position: relative;
 }
 
 .coins__background {
-    position: absolute;
-    top: -100px;
-    right: -60px;
-    width: 150px;
-    height: 160px;
-    background-size: cover;
+  position: absolute;
+  top: -100px;
+  right: -60px;
+  width: 150px;
+  height: 160px;
+  background-size: cover;
 }
 
 .coins__card {
-    background-color: hsl(0, 0%, 22%);
-    border-radius: 5%;
-    border: 0.05px solid grey;
-    padding: 2% 5%;
-    margin: 10% 0%;
+  background-color: hsl(0, 0%, 22%);
+  border-radius: 5%;
+  border: 0.05px solid grey;
+  padding: 2% 5%;
+  margin: 10% 0%;
 }
 
 .coins__item {
-    padding: 5% 0%;
+  padding: 5% 0%;
 }
 
 .coins__item_top {
-    background-color: hsl(0, 0%, 22%);
-    display: flex;
-    flex-direction: row;
-    gap: 5%;
-    align-items: center;
-    padding: 3% 0%;
+  background-color: hsl(0, 0%, 22%);
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+  align-items: center;
+  padding: 3% 0%;
 }
 
 .coins__item_top img {
-    background-color: hsl(0, 0%, 22%);
-    width: 25px;
-    height: 25px;
-}
-
-.coins__item_top .coins__item_top_symbol {
-    background-color: hsl(0, 0%, 22%);
+  background-color: hsl(0, 0%, 22%);
+  width: 25px;
+  height: 25px;
 }
 
 .coins__item_top_symbol {
-    font-size: 12.2px;
-    font-weight: 500;
+  font-size: 12.2px;
+  font-weight: 500;
 }
 
-.coins__item_top_name {    
-    background-color: #FFF8D6;
-    font-size: 7.84px;
-    font-weight: 500;
-    color: black;
-    border-radius: 10%;
-    padding-inline: 5%;
-    padding-block: 2%;
+.coins__item_top .coins__item_top_symbol {
+  background-color: hsl(0, 0%, 22%);
+}
+
+.coins__item_top_name {
+  background-color: #fff8d6;
+  font-size: 7.84px;
+  font-weight: 500;
+  color: black;
+  border-radius: 10%;
+  padding-inline: 5%;
+  padding-block: 2%;
 }
 
 .coins__card .coins__item div[path-color="negative"] svg path {
-    fill: #FFA3A6 !important;
-  }
-  
-  .coins__card .coins__item div[path-color="positive"] svg path {
-    fill: #B1FFC2 !important;
-  }
+  fill: #ffa3a6 !important;
+}
+
+.coins__card .coins__item div[path-color="positive"] svg path {
+  fill: #b1ffc2 !important;
+}
 
 .coins__item hr {
-    width: 98%;
-    color: grey;
+  width: 98%;
+  color: grey;
 }
 
 .coins__item_price {
-    background-color: hsl(0, 0%, 22%);
-    padding: 5% 0%;
-    font-size: 17.43px;
-    font-weight: 700;
+  background-color: hsl(0, 0%, 22%);
+  padding: 5% 0%;
+  font-size: 17.43px;
+  font-weight: 700;
 }
 
 .IoIosArrowDropupCircle {
-    width: 8px;
-    height: 11px;
+  width: 8px;
+  height: 11px;
 }
 
 @media screen and (min-width: 410px) {
-    .coins {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 5%;
-        padding: 0% 2%;
-    }
-    
-    .mobile {
-        display: none;
-    }
+  .coins {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
+    padding: 0% 2%;
+  }
 
-    .coins__card {
-        padding: 1% 2%;
-        padding-right: 9%;
-        text-align: start;
-    }
+  .mobile {
+    display: none;
+  }
 
-    .coins__item {
-        padding: 5% 0%;
-    }
+  .coins__card {
+    padding: 1% 2%;
+    padding-right: 9%;
+    text-align: start;
+  }
 
-    .coins__item_top {
-        display: flex;
-        flex-direction: row;
-        justify-content:space-around;
-        align-items: start;
-    }
+  .coins__item {
+    padding: 5% 0%;
+  }
+
+  .coins__item_top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+  }
 }

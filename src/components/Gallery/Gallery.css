@@ -1,61 +1,63 @@
 .gallery__container {
-    background-color: #f0f0f0;
-    padding: 15% 0%;
+  background-color: #f0f0f0;
+  padding: 15% 0%;
 }
 
 .gallery__title {
-    color: black;
-    text-align: center;
-    font-size: 25px;
-    font-weight: 700;
-    padding: 3% 0%;
+  color: black;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  padding: 3% 0%;
 }
 
 .gallery__item svg path {
-    color: #959595;
+  color: #959595;
 }
 
 .gallery__item svg {
-    font-size: 45px;
+  font-size: 45px;
 }
 
-  .card {
-    width: 90px; 
-    height: 90px; 
-    background-color: #d5d5d5;
-    margin-right: 1%;
-    margin-left: 1%;
-    color: black;
-    border: 2px solid white;
-  }
+.card {
+  width: 90px;
+  height: 90px;
+  background-color: #d5d5d5;
+  margin-right: 1%;
+  margin-left: 1%;
+  color: black;
+  border: 2px solid white;
+}
 
-  .gallery {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .gallery__item {
-    cursor: pointer;
-  }
+  cursor: pointer;
+}
 
 .desktop {
   display: none;
 }
 
-  @media screen and (min-width: 410px) {
-    .gallery__container{
-      padding: 5% 0%;
-    }
-    .card {
-      width: 130px;
-      height: 130px;
+@media screen and (min-width: 410px) {
+  .gallery__container {
+    padding: 5% 0%;
   }
+
+  .card {
+    width: 130px;
+    height: 130px;
+  }
+
   .desktop {
     display: none;
   }
 }
+
 @media screen and (min-width: 768px) {
   .desktop {
     display: block;
