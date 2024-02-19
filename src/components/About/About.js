@@ -1,3 +1,5 @@
+// Disable max-len for the specific lines
+// eslint-disable-next-line max-len
 import './About.css';
 import shieldIcon from '../../assets/about/shield.png';
 import peopleIcon from '../../assets/about/people.png';

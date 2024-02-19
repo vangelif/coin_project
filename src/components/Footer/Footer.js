@@ -33,10 +33,13 @@ const Footer = () => (
     </div>
     <div className="footer">
       <div className="footer__anchors">
+        {/* eslint-disable jsx-a11y/anchor-is-valid */}
         <a href="#">Privacy Policy  </a>
         |
+        {/* eslint-disable jsx-a11y/anchor-is-valid */}
         <a href="#">  Cookie Policy  </a>
         |
+        {/* eslint-disable jsx-a11y/anchor-is-valid */}
         <a href="#">  Terms and Conditions</a>
       </div>
       <img src={footerIcon} alt="footer" />

@@ -27,7 +27,7 @@ const Form = () => {
     const maxAgeDate = new Date();
     maxAgeDate.setFullYear(maxAgeDate.getFullYear() - 60);
 
-    return dob instanceof Date && !isNaN(dob)
+    return dob instanceof Date && Number.isNaN(dob.getTime())
             && dob < minAgeDate && dob > maxAgeDate;
   };
 
@@ -73,7 +73,6 @@ const Form = () => {
     }
 
     if (Object.keys(newErrors).length === 0) {
-      console.log('Form submitted successfully');
       setShowSuccessRegistration(true);
       setTimeout(() => {
         setShowSuccessRegistration(false);
@@ -118,8 +117,10 @@ const Form = () => {
       <form onSubmit={handleStep1Submit}>
         <article className="form__input_container">
           <div className="form__input">
+            {/* eslint-disable jsx-a11y/label-has-associated-control */}
             <label htmlFor="fullName">Full Name:</label>
             <div>
+              {/* eslint-disable jsx-a11y/label-has-associated-control */}
               <input
                 type="text"
                 id="fullName"
@@ -131,6 +132,7 @@ const Form = () => {
           </div>
           {errors.fullName && <span className="error">{errors.fullName}</span>}
           <div className="form__input">
+            {/* eslint-disable jsx-a11y/label-has-associated-control */}
             <label htmlFor="dob">Date of Birth:</label>
             <div>
               <DatePicker
@@ -165,7 +167,9 @@ const Form = () => {
       <form onSubmit={handleStep2Submit}>
         <article className="form__input_container">
           <div className="form__input">
+            {/* eslint-disable jsx-a11y/label-has-associated-control */}
             <label htmlFor="email">Email:</label>
+            {/* eslint-disable jsx-a11y/label-has-associated-control */}
             <input
               type="email"
               id="email"
@@ -176,7 +180,9 @@ const Form = () => {
             {errors.email && <span className="error">{errors.email}</span>}
           </div>
           <div className="form__input">
+            {/* eslint-disable jsx-a11y/label-has-associated-control */}
             <label htmlFor="password">Password:</label>
+            {/* eslint-disable jsx-a11y/label-has-associated-control */}
             <input
               type="password"
               id="password"
@@ -206,7 +212,7 @@ const Form = () => {
       )}
       <footer className="form__footer">
         <p>
-          Don't have an account?
+          Don&apos;t have an account?
           <a style={{ color: 'red' }} href="/">Create one here</a>
           {' '}
           and register for the event

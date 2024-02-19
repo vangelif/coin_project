@@ -41,7 +41,7 @@ const Cards = () => (
         {' '}
         <span>lowest spreads</span>
         {' '}
-        and we don't charge commissions.
+        and we don&apos;t charge commissions.
       </p>
     </div>
 

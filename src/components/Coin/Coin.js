@@ -51,9 +51,9 @@ const Coin = () => {
 
     <div className="coins">
       <div className="coins__background mobile" style={{ backgroundImage: `url(${midImg})` }} />
-      {coins.filter((coin) => ['BTC', 'ETH', 'XRP', 'LTC', 'BCH'].includes(coin.symbol)).map((coin, index) => (
-        <section className="coins__card">
-          <div key={index} className="coins__item">
+      {coins.filter((coin) => ['BTC', 'ETH', 'XRP', 'LTC', 'BCH'].includes(coin.symbol)).map((coin) => (
+        <section key={coin.symbol} className="coins__card">
+          <div className="coins__item">
             <div className="coins__item_top">
               <img src={getIcon(coin.symbol)} alt={`${coin.symbol} icon`} className="icon-image" />
               <div className="coins__item_top_symbol">{coin.symbol}</div>

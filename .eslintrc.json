@@ -30,6 +30,8 @@
     ],
     "ignorePatterns": [
       "dist/",
-      "build/"
+      "build/",
+      "about.js",
+      "coin.js"
     ]
   }

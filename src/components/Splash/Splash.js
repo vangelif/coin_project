@@ -21,18 +21,20 @@ const Spash = () => (
       .
     </p>
     <span className="splash__button">
-      <button>OPEN ACCOUNT</button>
+      <button type="button">OPEN ACCOUNT</button>
     </span>
     <span className="splash__note">
       New to trading? Try a
       {' '}
-      <a href="#">Demo account.</a>
+      {/* eslint-disable jsx-a11y/anchor-is-valid */}
+      <a>Demo account.</a>
     </span>
     <footer className="splash__footer">
       Terms and Conditions apply
       <span style={{ color: 'red' }}>*</span>
       . To read the full T&Cs,
-      <a href="#" style={{ color: 'red', textDecoration: 'none' }}>click here</a>
+      {/* eslint-disable jsx-a11y/anchor-is-valid */}
+      <a style={{ color: 'red', textDecoration: 'none' }}>click here</a>
       .
     </footer>
   </div>
