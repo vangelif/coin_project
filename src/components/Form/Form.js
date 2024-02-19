@@ -27,7 +27,7 @@ const Form = () => {
     const maxAgeDate = new Date();
     maxAgeDate.setFullYear(maxAgeDate.getFullYear() - 60);
 
-    return dob instanceof Date && Number.isNaN(dob.getTime())
+    return dob instanceof Date && !isNaN(dob)
             && dob < minAgeDate && dob > maxAgeDate;
   };
 
