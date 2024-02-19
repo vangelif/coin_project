@@ -2,9 +2,8 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 const BASE_API = 'https://api.coinlore.net/api/tickers';
-const PROXY_URL = 'https://cors-anywhere.herokuapp.com/';
+// const PROXY_URL = 'https://cors-anywhere.herokuapp.com/';
 
-// Define async thunk action to fetch coin data
 export const fetchCoinData = createAsyncThunk(
   'coins/fetchCoinData',
   async () => {
@@ -21,7 +20,6 @@ export const fetchCoinData = createAsyncThunk(
   }
 );
 // console.log(fetchCoinData);
-// Define slice with initial state and reducers
 const coinsSlice = createSlice({
   name: 'coins',
   initialState: {
@@ -49,7 +47,6 @@ const coinsSlice = createSlice({
   },
 });
 
-// Export slice actions, selectors, and reducer
 export const { actions } = coinsSlice;
 export const showCoins = (state) => state.coins.coins;
 export default coinsSlice.reducer;
