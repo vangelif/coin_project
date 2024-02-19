@@ -8,7 +8,9 @@ export const fetchCoinData = createAsyncThunk(
   'coins/fetchCoinData',
   async () => {
     try {
-      const response = await fetch(PROXY_URL + BASE_API);
+      // const response = await fetch(PROXY_URL + BASE_API);
+      const response = await fetch(BASE_API);
+
       if (!response.ok) {
         throw new Error('Cannot fetch data');
       }
