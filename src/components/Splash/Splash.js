@@ -6,7 +6,7 @@ const Spash = () => (
     <p className="splash__info1">
       <span>Zero Swaps</span>
       {' '}
-      on All XM Ultra Low Accounts for more than 25 instruments!
+      on All VV Ultra Low Accounts for more than 25 instruments!
     </p>
     <p className="splash__info2">
       Enjoy spread

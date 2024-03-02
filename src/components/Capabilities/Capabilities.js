@@ -8,7 +8,7 @@ const Capabilities = () => (
       Why
       <span>TRADE </span>
       <br />
-      with XM?
+      with VV?
     </h2>
     <hr />
     <p className="capabilities__info">

@@ -18,7 +18,7 @@ const About = () => (
       </section>
       <p className="about__description">
         Learn why
-        <span>over 5 million clients choose XM</span>
+        <span>over 5 million clients choose VV</span>
         {' '}
         as their trusted online broker.
       </p>
@@ -28,7 +28,7 @@ const About = () => (
         <img src={shieldIcon} alt="shield" />
         <section>Authorised and Regulated</section>
         <p className="about__container_description">
-          At XM, we adhere to all regulatory standards, and are fully authorised and regulated by FSC.
+          At VV, we adhere to all regulatory standards, and are fully authorised and regulated by FSC.
         </p>
       </div>
 
