@@ -5,16 +5,14 @@ import Footer from './Footer/Footer';
 import About from './About/About';
 import Gallery from './Gallery/Gallery';
 
-const Layout = () => {
-  return (
-    <>
-        <Nav />
-        <Home />
-        <Gallery />
-        <About />
-        <Footer />
-    </>
-  );
-};
+const Layout = () => (
+  <>
+    <Nav />
+    <Home />
+    <Gallery />
+    <About />
+    <Footer />
+  </>
+);
 
 export default Layout;

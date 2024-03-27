@@ -1,25 +1,21 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 
-*
-{
-    margin: 0;
-    padding: 0;
-    color:white;
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
 
-    html,
-    body
-    {
-        font-family: 'Bebas Neue', 'Roboto';
-        button {
-            font-family: 'Bebas Neue', 'Roboto';
-            width: 100%;
-            border: none;
-            padding-block: 4%;
-            font-size: 18px;
-            font-weight: 700;
-        }    
+  html,
+  body {
+    font-family: 'Bebas Neue', 'Roboto', sans-serif;
+
+    button {
+      font-family: 'Bebas Neue', 'Roboto', sans-serif;
+      width: 100%;
+      border: none;
+      padding-block: 4%;
+      font-size: 18px;
+      font-weight: 700;
     }
+  }
 }
-
-
-

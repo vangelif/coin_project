@@ -1,94 +1,94 @@
 .splash {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 22% 10%;
-    background-image: url(../../assets/mobile/top.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 22% 10%;
+  background-image: url(../../assets/mobile/top.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .splash__title {
-    font-size: 16px;
-    font-weight: 400;
-    padding-bottom: 8%;
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 8%;
 }
 
 .splash__info1 {
-    font-size: 28px;
-    font-weight: 400;
-    text-align: center;
-    padding-bottom: 10%;
+  font-size: 28px;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 10%;
 }
 
 .splash__info1 span {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .splash__info2 {
-    font-size: 14px;
-    font-weight: 400;
-    text-align: center;
-    padding-bottom: 10%;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 10%;
 }
 
 .splash__info2 span {
-    font-weight: 700;
-
+  font-weight: 700;
 }
 
 .splash__button {
-    padding-bottom: 3%;
-    width: 100%;
-    padding-bottom: 10%;
+  width: 100%;
 }
 
 .splash__button button {
-    background-color: #29A643;
+  background-color: #29a643;
 }
 
 .splash__note {
-    font-size: 14px;
-    font-weight: 400;
-    padding-bottom: 10%;
+  font-size: 14px;
+  font-weight: 400;
+  padding-bottom: 10%;
 }
 
 .splash__footer {
-    font-size: 12px;
-    font-weight: 400;
-    text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
+  .splash {
+    background-image: url(../../assets/splash-tablet.png);
+    padding: 7% 15%;
+  }
+
+  .splash__title {
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 2%;
+  }
+
+  .splash__info1 {
+    padding: 2% 10%;
+  }
+
+  .splash__info2 {
+    padding: 5% 15%;
+  }
+
+  .splash__button {
+    width: 55%;
+    padding-bottom: 5%;
+  }
+
+  .splash__note {
+    padding-bottom: 3%;
+  }
+
+  @media screen and (min-width: 1024px) {
     .splash {
-        background-image: url(../../assets/splash-tablet.png);
-        padding: 7% 15%;
+      background-image: url(../../assets/splash-desktop.png);
+      padding: 7% 15%;
     }
-
-    .splash__title {
-        font-size: 16px;
-        font-weight: 400;
-        padding-bottom: 2%;
-    }
-
-    .splash__info1 {
-        padding: 2% 10%;
-    }
-    .splash__info2 {
-        padding: 5% 15%;
-    }
-    .splash__button {
-        width: 55%;
-        padding-bottom: 5%;
-    }
-    .splash__note {
-        padding-bottom: 3%;
-    }
-
-    @media screen and (min-width: 1024px) {
-        .splash {
-            background-image: url(../../assets/splash-desktop.png);
-            padding: 7% 15%;
-        }
-    }
+  }
 }

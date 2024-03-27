@@ -8,24 +8,22 @@ import Form from './Form/Form';
 
 import backgroundImg from '../assets/mobile/back.png';
 
-const Home = () => {
-    return (
-    <main style={{backgroundImage: `url(${backgroundImg})`}}>
-        {/* <article> */}
-            <header>
-                <Splash />
-            </header>
-            <section>
-                <Coin />
-                <Capabilities />
-                <Register />
-            </section>    
-            <footer>
-                <Form />
-            </footer>
-        {/* </article> */}
-    </main>
-    );
-    }
+const Home = () => (
+  <main style={{ backgroundImage: `url(${backgroundImg})` }}>
+    {/* <article> */}
+    <header>
+      <Splash />
+    </header>
+    <section>
+      <Coin />
+      <Capabilities />
+      <Register />
+    </section>
+    <footer>
+      <Form />
+    </footer>
+    {/* </article> */}
+  </main>
+);
 
-export default Home;    
+export default Home;
